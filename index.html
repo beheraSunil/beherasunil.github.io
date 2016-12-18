@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
     <!-- <link rel="icon" type="image/x-icon" href="img/uc.svg" /> -->
 
@@ -20,22 +20,33 @@
 
 </head>
 <style type="text/css">
-#main{
-    background-image: url(./img/uc.svg);
-    height: calc(100vh - 15vh);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: .5;
-}
+
 </style>
 <body>
-    <div class="container" id = "main">
-
-        <div class="row" >
-            <div col = "col-md-12">
+    <div class="container">
+    <div class = "row">
+        <div class = "md-col-12">
+            <img src = "img/uc.svg" id = "uc">
+            <div id = "t1" style = 'display:none;'>
+                <h1>Be the first to know when we launch.</h1>
+                <input type="email"  id="InputEmail" aria-describedby="emailHelp" ' placeholder="jan@doe.com" autocomplete="on">
+            </div>
         </div>
-
+    </div>
     </div>
 
 </body>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyDJIvShtyFXByqH4Sb9vxQyb5PftJJcvAw",
+        authDomain: "beherasunil-b9140.firebaseapp.com",
+        databaseURL: "https://beherasunil-b9140.firebaseio.com",
+        storageBucket: "beherasunil-b9140.appspot.com",
+        messagingSenderId: "81697265258"
+        };
+        firebase.initializeApp(config);
+    </script>
 </html>
