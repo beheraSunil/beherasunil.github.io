@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="sunil.behera@outlook.com">
 
-    <title>Contact | Sunil</title>
+    <title>Reach Out!</title>
 </head>
 
 <style>
@@ -19,22 +19,13 @@
         margin: 0px;
     }
     
-    .icon:hover,
     .social-icons:hover {
         color: black;
     }
     
-    .icon {
-        color: gray;
-        cursor: pointer;
-        position: relative;
-        top: 5px;
-    }
-    
     .social-icons {
-        color: gray;
         cursor: pointer;
-        padding: 0 5px;
+        margin: 0 5px;
     }
     
     a {
@@ -42,124 +33,111 @@
         background-color: transparent;
     }
     
-    @keyframes upBottom {
-        0% {
-            top: -50px;
-        }
-        70% {
-            top: -10px;
-        }
-        100% {
-            top: 0px;
-        }
-    }
-    
-    .contact {
-        animation: bottomUp .5s linear;
-        position: relative;
-        display: none;
-        font-weight: 400;
-        margin: 0%;
-    }
-    
-    @keyframes bottomUp {
-        0% {
-            bottom: -30px;
-        }
-        70% {
-            bottom: -5px;
-        }
-        90% {
-            bottom: -2px;
-        }
-        100% {
-            bottom: 0px;
-        }
-    }
-    
     .social {
-        animation: leftRight .5s linear;
+        animation: rightLeft .5s linear;
         position: relative;
         display: none;
         overflow: hidden;
     }
     
-    @keyframes leftRight {
+    @keyframes rightLeft {
         0% {
-            left: -120px;
+            right: -120px;
         }
         70% {
-            left: -5px;
+            right: -5px;
         }
         90% {
-            left: -2px;
+            right: -2px;
         }
         100% {
-            left: 0px;
+            right: 0px;
+        }
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeinout {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 1;
         }
     }
 </style>
 
 <body>
 
-    <main style=" display: grid; align-items: center; justify-content: center; top: 0; bottom: 0; position: absolute; width: 100%">
+    <main style=" display: grid; align-items: center; justify-content: left; top: 0; bottom: 0; position: absolute; width: 100%">
         <section style="min-height: 150px; min-width: 230px; padding: 10px;">
-            <h1 style="margin: 0%; animation: upBottom .5s linear; position: relative; display: inline-block;">
+            <h1 style="margin: 0%; animation: fadeinout 7s linear forwards; position: relative; display: inline-block; font-size: 30px;" id="name">
                 Sunil Behera
             </h1>
-            <p class="contact" id="mail">
-                <a href="mailto:sunil.behera@outlook.com" alt="Send Mail">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
-                        <g fill="currentColor">
-                            <path id="XMLID_497_" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                        </g>
-                    </svg>
-                </a>
-                <span>sunil.behera@outlook.com</span>
-            </p>
-            <p class="contact" id="phone">
-                <a href="tel:+91 94375 95871">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
-                        <g fill="currentColor">
-                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
-                        </g>
-                    </svg>
-                </a>
-                <span>+91 94375 95871</span>
-            </p>
-            <p class="contact" id="location">
-                <a href="url">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
-                        <g fill="currentColor">
-                            <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z" />
-                        </g>
-                    </svg>
-                </a>
-                <span>Pune, India</span>
-            </p>
-            <div style="text-align:right;">
-                <a href="https://www.linkedin.com/in/beherasunil/" class="social" id="linkedin">
-                    <svg class="social-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18" height="18">
-                        <g fill="currentColor">
-                            <path d="M3.94,2A2,2,0,1,1,2,0,2,2,0,0,1,3.94,2ZM4,5.48H0V18H4Zm6.32,0H6.34V18h3.94V11.43c0-3.66,4.77-4,4.77,0V18H19V10.07c0-6.17-7.06-5.94-8.72-2.91Z"></path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="https://github.com/beherasunil" class="social" id="github">
-                    <svg class="social-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="18">
-                        <g fill="currentColor">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="https://twitter.com/_sunilbehera" class="social" id="twitter">
-                    <svg class="social-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.5 222.3" height="18">
-                        <g fill="currentColor">
-                            <path d="M273.5,26.3a109.77,109.77,0,0,1-32.2,8.8A56.07,56.07,0,0,0,266,4.1a113.39,113.39,0,0,1-35.7,13.6,56.1,56.1,0,0,0-97,38.4,54,54,0,0,0,1.5,12.8A159.68,159.68,0,0,1,19.1,10.3,56.12,56.12,0,0,0,36.5,85.2a56.06,56.06,0,0,1-25.4-7v.7a56.11,56.11,0,0,0,45,55,55.65,55.65,0,0,1-14.8,2,62.39,62.39,0,0,1-10.6-1,56.24,56.24,0,0,0,52.4,39,112.87,112.87,0,0,1-69.7,24A119,119,0,0,1,0,197.1a158.83,158.83,0,0,0,86,25.2c103.2,0,159.6-85.5,159.6-159.6,0-2.4-.1-4.9-.2-7.3a114.25,114.25,0,0,0,28.1-29.1"></path>
-                        </g>
-                    </svg>
-                </a>
-            </div>
+            <ul style="align-items: center; display: flex; list-style: none; padding: 0px">
+                <li>
+                    <a href="mailto:sunil.behera@outlook.com" alt="Send Mail" class="social" id="mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z"/>
+                            <path d="M22 4H2v16h20V4zm-2 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+91 94375 95871" class="social" id="phone">
+                        <svg class="social-icons" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                            <g>
+                                <path fill="none" d="M0 0h24v24H0V0z" />
+                            </g>
+                            <g>
+                                <path d="M21 15.46l-5.27-.61-2.52 2.52c-2.83-1.44-5.15-3.75-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/beherasunil" class="social" id="github">
+                        <svg class="social-icons" width="24" height="24" viewBox="0 0 1024 1024" fill="none">
+                            <g transform="scale(64)" fill="#1B1F23">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                                />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/beherasunil/" class="social" id="linkedin">
+                        <svg class="social-icons" x="0px" y="0px" width="24" height="24" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+                            <g transform="translate(-373.642,-318.344)">
+                                <path fill="#000" d="M583.659,328.849H419.625c-19.599,0-35.487,15.888-35.487,35.487v164.015c0,19.599,15.888,35.486,35.487,35.486h164.033 c19.599,0,35.487-15.888,35.487-35.486V364.337C619.146,344.738,603.257,328.849,583.659,328.849z" />
+                                <path opacity="0.7811" fill="#000" d="M557.056,338.895H446.227c-29.337,0-52.955,23.81-52.955,53.385v108.127c0.95,23.087,4.603,8.491,11.555-17.075 c8.081-29.713,34.396-55.682,66.445-75.145c24.461-14.855,51.84-24.341,101.679-25.244 C601.216,382.432,598.721,346.26,557.056,338.895z" />
+                            </g>
+                            <g transform="translate(-200.55198,-393.96227)">
+                                <g transform="matrix(1.018827,0,0,-1.018827,170.5996,498.03288)">
+                                    <path fill="#FFFFFF" d="M109.495-101.774V2.533H74.828v-104.307H109.495z M92.168,16.775c12.081,0,19.612,8.01,19.612,18.021c-0.224,10.233-7.531,18.021-19.385,18.021 c-11.864,0-19.615-7.788-19.615-18.021c0-10.011,7.521-18.021,19.159-18.021H92.168L92.168,16.775z" />
+                                    <path fill="#FFFFFF" d="M128.681-101.774h34.673v58.249 c0,3.119,0.226,6.235,1.143,8.462c2.5,6.232,8.209,12.681,17.784,12.681c12.547,0,17.562-9.568,17.562-23.588v-55.804h34.666 v59.81c0,32.039-17.1,46.946-39.913,46.946c-18.701,0-26.915-10.45-31.476-17.571h0.234V2.533h-34.673 C129.141-7.253,128.681-101.774,128.681-101.774L128.681-101.774z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
 
@@ -168,22 +146,20 @@
 </html>
 
 <script>
+    var timeDelay = 1000;
     setTimeout(() => {
-        document.getElementById("mail").style = "display:block";
-    }, 500);
-    setTimeout(() => {
-        document.getElementById("phone").style = "display:block";
-    }, 1000);
-    setTimeout(() => {
-        document.getElementById("location").style = "display:block";
-    }, 1500);
-    setTimeout(() => {
-        document.getElementById("twitter").style = "display:inline-block";
-    }, 2000);
-    setTimeout(() => {
-        document.getElementById("github").style = "display:inline-block";
-    }, 2500);
+        document.getElementById("name").textContent = "Full Stack JavaScript Developer";
+    }, timeDelay + 2500);
     setTimeout(() => {
         document.getElementById("linkedin").style = "display:inline-block";
-    }, 3000);
+    }, timeDelay + 2000);
+    setTimeout(() => {
+        document.getElementById("github").style = "display:inline-block";
+    }, timeDelay + 1500);
+    setTimeout(() => {
+        document.getElementById("phone").style = "display:inline-block";
+    }, timeDelay + 1000);
+    setTimeout(() => {
+        document.getElementById("mail").style = "display:inline-block";
+    }, timeDelay + 500);
 </script>
